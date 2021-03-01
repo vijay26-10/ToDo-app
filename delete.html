@@ -1,0 +1,9 @@
+<p>CONFIRM TO DELETE "{{item}}"</p>
+
+<a href="{% url 'index' %}">CANCEL</a>
+
+<form action="" method="POST">
+    {%csrf_token%}
+    <input type="submit" value="CONFIRM">
+
+</form>
